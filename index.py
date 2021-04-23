@@ -1,5 +1,5 @@
 # -*- coding: utf8 -*-
-import json, base64
+import base64
 from requests import Session
 
 # debug
