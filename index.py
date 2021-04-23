@@ -14,9 +14,9 @@ def main_handler(event, context):
     cs_srv_addr     =   'http://*.*.*.*:8080/release'
     http_path       =   event['path']
     http_headers    =   event['headers']
+    http_query      =   event['queryString']
     http_method     =   event['httpMethod']
     http_body       =   event['body']   if 'body' in event.keys() else None
-    http_query      =   event['queryString']
     http_timeout    =   20
 
     # remove host header
